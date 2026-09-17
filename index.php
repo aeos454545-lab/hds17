@@ -24,7 +24,7 @@ header('Cache-Control: public, max-age=3600, stale-while-revalidate=86400');
 <link rel="canonical" href="https://taraftarium24hd17.vip/">
 <link rel="alternate" hreflang="tr" href="https://taraftarium24hd17.vip/">
 <link rel="alternate" hreflang="x-default" href="https://taraftarium24hds17.vip/">
-<meta name="google-site-verification" content="jOoKzGy4OabEh95YgIukMFZxsAPb9Qc8fBeXwsXJ2X4" />
+<meta name="google-site-verification" content="8Mq5Kcz2twDqFnbMumA7vvfur71nIU6B8NV4A6Pyfnk" />
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Canl&#305; Ma&#231; &#304;zle | Taraftarium24 &amp; Sel&#231;uksports HD 2026">
